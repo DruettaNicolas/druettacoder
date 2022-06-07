@@ -1,0 +1,486 @@
+*{padding: 0%;
+margin: 0%;
+box-sizing: border-box;
+}
+.body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(37,37,131,1) 35%, rgba(11,30,142,1) 100%);
+}
+/*HEADER*/
+
+.div__text{ display: flex;
+    align-items:stretch;
+    color:black;
+}
+
+.header__nav{
+    background-color: gray;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+}
+.header__logo{
+    width: 4rem;
+    position: absolute;
+    top: 0.130rem;
+}
+.header__ul{
+    text-align: end;
+    font-size: 1.25rem;
+
+}
+.header__list{
+    display: inline;
+    margin: 0 0.625rem;
+}
+.header__anchor{
+    text-decoration: none;
+    color: black;
+}
+
+/*FORMULARIOS*/
+.form{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.form__div{
+    padding-left: 0.25rem;
+}
+.form__label5{
+    padding-left: 0.25rem;
+}
+.filset__legend{
+    background-color: rgb(7, 252, 252);
+    border-radius: 1rem;
+}
+.p__bio{
+    font-size:larger;
+    padding: 1rem 1rem;
+}
+.h2__bio{
+    display: flex;
+    justify-content: center;
+}
+.table{
+    background-color: gainsboro;
+    border-color: black;
+    border-radius: 1rem;
+    box-sizing: content-box;
+    margin-left: 30rem;
+    margin-right: 30rem;
+}
+.main__index{
+    background-image: url(../assets/home.png) ;
+    height: 40rem;
+    background-repeat: no-repeat;
+}
+
+.div__padre{
+    display: grid;
+    grid-template-areas: "main__h1"
+                        "main__h2"
+                        "div__main"
+                        "footer";
+    grid-template-rows: none;
+    grid-template-columns:none;
+    justify-items: center;
+    align-items: center;
+
+}
+.main__h1{
+    display: grid;
+    grid-area: main__h1;
+    color: transparent ; color:aliceblue;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.main__h2{
+    display: grid;
+    grid-area: main__h2;
+    color: transparent ; color:aliceblue;
+}
+.div__main{
+display: grid;
+}
+.ola__main{
+display: flex;
+align-content:flex-end;
+position:absolute;
+top:25.8rem;
+left: 0rem;
+}
+.p__main{
+display: flex;
+    font-size: larger;
+    color: aliceblue;
+position: absolute;
+top: 38.4rem;
+left: 0rem;
+}
+
+.footer{
+    display: grid;
+    grid-area: footer;
+    background-color: gray;
+
+}
+
+/*CURSOS*/
+.div__info1{
+    background-color:azure;
+    height: 5rem;
+    display: flex;
+    margin: 1 rem;
+    padding: 1rem;
+    font-size: xx-large;
+}
+.div__info2{
+    background-color:rgb(164, 243, 243);
+    height: 5rem;
+    display: flex;
+    margin: 1 rem;
+    padding: 1rem;
+    font-size: xx-large;
+}
+.div__info3{
+    background-color:rgb(101, 228, 143);
+    height: 5rem;
+    display: flex;
+    margin: 1 rem;
+    padding: 1rem;
+    font-size: xx-large;
+}
+.a__botton{
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    margin: 4rem 30rem;
+    border-radius: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    ;font-size: large;
+    
+}
+/*TIENDA*/
+.h2__tienda{
+    display: flex;
+    justify-content: center;
+}
+.div__tienda{
+    display: grid;
+    gap: 2rem;
+    height: 18.75rem;
+}
+.div__producto{
+    display:grid;
+    background-color:black;
+    grid-template-rows: 1fr 10fr 4rem;
+    grid-template-columns: 100vh;
+    grid-template-areas:  "img__producto h3__producto"
+                          "img__producto p__producto"
+                          "img__producto botton__producto";
+    border-style: double; color: blueviolet;
+
+}
+
+.img__producto{
+    grid-area: img__producto;
+    box-sizing: content-box;
+    margin: 2rem;
+    box-sizing: border-box;
+    border-radius: 3rem;
+    }
+    .h3__producto{
+        font-size: medium;
+        color:white;
+        grid-area: h3__producto;
+        display: flex;
+        justify-content: left;
+        align-self: flex-start;
+        justify-items: left;
+        border-style:double; color: aliceblue 
+    }
+    .p__producto{
+        font-size: medium;
+        color:white;
+        grid-area: p__producto;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        border: 1px solid white ;
+        justify-items: left;
+        box-sizing: content-box;
+        top: 3rem;
+    }
+    .button__producto{
+        box-sizing: border-box;
+        margin: 0rem 16rem;
+        border-radius: 4rem;
+
+}
+/*BIOGRAFIA*/
+.table{
+    display: flex;
+    justify-content: center;
+}
+
+/*MEDIA QUERIES*/
+/*425*/
+@media screen and  (max-width: 425px) {
+    .div__padre{
+    grid-template-areas: "main__h1"
+                        "main__h2";
+    grid-template-columns:  ;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.p__main{
+    font-size: small;
+    display: flex;
+    position: sticky;
+    
+}
+.main__index{
+    background-image: ;
+    height: 30rem;
+}
+.ola__main{
+    display: none;
+}
+.footer{
+    display: none;
+}
+/*MEDIA QUERIES CURSOS*/
+
+.div__cursos{
+    display: flex;
+}
+}
+.div__info1{
+    background-color:azure;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 3rem;
+    display: flex;
+    margin: 3 rem;
+    padding: 3rem;
+    font-size: smaller;
+}
+.div__info2{
+    background-color:rgb(164, 243, 243);
+        justify-content: center;
+    align-content: center;
+    height: 3rem;
+    display: flex;
+    margin: 3 rem;
+    padding: 3rem;
+    font-size: smaller;
+}
+.div__info3{
+    background-color:rgb(101, 228, 143);
+    height: 3rem;
+    display:3flex;
+    margin: 3 rem;
+    padding:3rem;
+    font-size: smaller;
+}
+.p__curso{
+
+}
+.a__botton{
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    margin: 8rem 6rem;
+    border-radius: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    ;font-size: medium;
+    
+}
+
+/*MEDIA QUERIES TIENDA*/
+
+.div__producto{
+    height: ;
+    display:grid;
+    background-color:black;
+    grid-template-rows: 1fr 10fr 4rem;
+    grid-template-columns: 2rem 4rem 4rem;
+    grid-template-areas:  "img__producto h3__producto"
+                          "img__producto p__producto"
+                          "img__producto botton__producto";
+    border-style: double; color: blueviolet;
+
+}
+
+.img__producto{
+grid-area: img__producto;
+box-sizing: content-box;
+margin: 2rem;
+box-sizing: border-box;
+border-radius: 3rem;
+}
+.h3__producto{
+    font-size: medium;
+    color:white;
+    grid-area: h3__producto;
+    display: flex;
+    justify-content: left;
+    align-self: flex-start;
+    justify-items: left;
+    border-style:double; color: aliceblue 
+}
+.p__producto{
+    font-size: medium;
+    color:white;
+    grid-area: p__producto;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border: 1px solid white ;
+    justify-items: left;
+    box-sizing: content-box;
+    top: 3rem;
+}
+.button__producto{
+box-sizing: border-box;
+margin: 0rem 16rem;
+border-radius: 4rem;
+}
+/*MEDIA QUERIES 1440*/
+@media screen and (max-width:1440px );{
+    /*MEDIA QUERIES CURSOS 1440*/
+    
+    .div__cursos{
+        display: flex;
+    }
+    }
+    .div__info1{
+        background-color:azure;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: 6rem;
+        display: flex;
+        margin: 4 rem;
+        padding: 4rem;
+        font-size: smaller;
+    }
+    .div__info2{
+        background-color:rgb(164, 243, 243);
+            justify-content: center;
+        align-content: center;
+        height: 6rem;
+        display: flex;
+        margin: 4 rem;
+        padding: 4rem;
+        font-size: smaller;
+    }
+    .div__info3{
+        background-color:rgb(101, 228, 143);
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: 6rem;
+        display:flex;
+        margin: 4 rem;
+        padding:4rem;
+        font-size: smaller;
+    }
+    .p__curso{
+        display: flex;
+        align-self: center;
+    font-size: medium;
+    }
+    .a__botton{
+        background-color: cornflowerblue;
+        display: flex;
+        justify-content: center;
+        margin: 10rem 30rem;
+        border-radius: 1rem;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        ;font-size: medium;
+        
+    }
+
+@media screen and (max-width:1284px) ;{
+        /*INDEX 1284*/
+        .div__padre{
+            grid-template-areas: "main__h1"
+                                "main__h2";
+            grid-template-columns:  ;
+            grid-template-rows: 1fr 1fr;
+        }
+        .main__index{
+            height: 30rem;
+        }
+        .p__main{
+            font-size: small;
+            display: flex;
+        }
+        .div__main{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        .ola__main{
+            display: none;
+        }
+        .footer{
+            display: none;
+        }
+}
+/*MEDIA QUERIES 325 CURSOS*/
+
+@media screen (min-width: 325) {;
+    .div__cursos{
+        display: flex;
+    }
+    }
+    .div__info1{
+        background-color:azure;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: 20rem;
+        display: flex;
+        margin: 1 rem;
+        padding: 1rem;
+        font-size: smaller;
+        ;
+    }
+    .div__info2{
+        background-color:rgb(164, 243, 243);
+            justify-content: center;
+        align-content: center;
+        height: 20rem;
+        display: flex;
+        margin: 1 rem;
+        padding: 1rem;
+        font-size: smaller;
+    }
+    .div__info3{
+        background-color:rgb(101, 228, 143);
+        height: 20rem;
+        display:flex;
+        margin: 1 rem;
+        padding:1rem;
+        font-size: smaller;
+    }
+    .p__curso{
+    
+    }
+    .a__botton{
+        background-color: cornflowerblue;
+        display: flex;
+        align-self: baseline;
+        align-items: center;
+        position: absolute;
+        left: 3rem;
+        bottom: 2rem;
+        margin: 2rem 2rem;
+        border-radius: 1rem;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        ;font-size: medium;
+        
+    }
+}
